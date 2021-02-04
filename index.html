@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reserva de Horas</title>
+  <!--Font Family-->
+  <link rel="preconnect" href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css2?family=Asap&display=swap" rel="stylesheet">
+  <!--Mi estilo-->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <div class="claseContenedor">
+    <h2 class="claseTitulo">Reserve su Hora</h2>
+    <form class="claseFormulario">
+      <div>
+        <label>RUT</label>
+        <input id="rut" class="claseFormulario__rut" type="text" placeholder="xxxxxxxx-x">
+      </div>
+      <div>
+        <label>NOMBRES</label>
+        <input id="nombres" class="claseFormulario__nombres" type="text" placeholder="Xxxxx Xxxxx">
+      </div>
+      <div>
+        <label>APELLIDOS</label>
+        <input id="apellidos" class="claseFormulario__apellidos" type="text" placeholder="Xxxxx Xxxxx">
+      </div>
+      <div>
+        <label>EDAD</label>
+        <input id="edad" class="claseFormulario__edad" type="text" placeholder="xx">
+      </div>
+      <div>
+        <label>EMAIL</label>
+        <input id="email" class="claseFormulario__email" type="text" placeholder="xxxxx@xxxxx.xx">
+      </div>
+      <div>
+        <label>ESPECIALIDAD</label>
+        <select id="especialidad" class="claseFormulario__especialidad">
+          <option selected>Seleccione una opción</option>
+          <option>Radiología</option>
+          <option>Traumatología</option>
+          <option>Dental</option>
+        </select>
+      </div>
+      <div>
+        <label>FECHA</label>
+        <input id="fecha" class="claseFormulario__fecha" type="text" placeholder="dd-mm-aaaa">
+      </div>
+      <div>
+        <label>HORA</label>
+        <select id="hora" class="claseFormulario__hora">
+          <option selected>Seleccione una opción</option>
+          <option>09:00</option>
+          <option>09:30</option>
+          <option>10:00</option>
+          <option>10:30</option>
+          <option>11:00</option>
+          <option>11:30</option>
+          <option>12:00</option>
+        </select>
+      </div>
+    </form>
+    <button id="boton" class="claseBoton" type="button">Reservar</button>
+  </div>
+
+  <div id="mensaje" class="claseMensaje"></div>
+
+    <!--Mi script-->
+  <script type="text/javascript" src="assets/js/script.js"></script>
+</body>
+
+</html>
